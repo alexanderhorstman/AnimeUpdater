@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="90dp"
+        android:id="@+id/anime_image"
+        android:src="@drawable/image_not_found"
+        android:layout_alignParentLeft="true"/>
+
+
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:id="@+id/list_id_image"
+        android:src="@drawable/initial_list_image"
+        android:layout_alignBottom="@id/anime_image"
+        android:layout_alignParentRight="true"
+        android:onClick="openListSelect"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/anime_name"
+        android:textSize="30sp"
+        android:textColor="#FF000000"
+        android:paddingTop="20dp"
+        android:paddingLeft="15dp"
+        android:text="Anime Name"
+        android:layout_toRightOf="@+id/anime_image"
+        android:layout_toLeftOf="@id/list_id_image"/>
+
+
+
+</RelativeLayout>

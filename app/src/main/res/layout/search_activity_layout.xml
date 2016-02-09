@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="15dp">
+
+    <ImageView
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:src="@drawable/search_icon"
+        android:id="@+id/search_image"
+        android:layout_alignParentRight="true"
+        android:onClick="searchForAnime"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Search"
+        android:id="@+id/search_bar"
+        android:layout_toLeftOf="@id/search_image"
+        android:inputType="textCapWords"
+        android:singleLine="true"
+        android:paddingLeft="5dp"/>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/search_results"
+        android:layout_below="@id/search_image"
+        android:layout_marginTop="10dp"/>
+
+</RelativeLayout>
