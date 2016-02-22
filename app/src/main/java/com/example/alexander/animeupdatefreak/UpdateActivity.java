@@ -66,8 +66,8 @@ public class UpdateActivity extends Activity {
         @Override
         protected void onPostExecute(Void result) {
             // Set title into TextView
-            UpdateListAdapter adapter = new UpdateListAdapter(context, episodes);
-            listView.setAdapter(adapter);
+            //UpdateListAdapter adapter = new UpdateListAdapter(context, episodes);
+            //listView.setAdapter(adapter);
         }
     }
 }

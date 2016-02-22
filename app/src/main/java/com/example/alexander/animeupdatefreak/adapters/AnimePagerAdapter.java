@@ -6,10 +6,9 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 
 
-import com.example.alexander.animeupdatefreak.AnimeFinishedListFragment;
-import com.example.alexander.animeupdatefreak.AnimeShow;
-import com.example.alexander.animeupdatefreak.AnimeWatchLaterListFragment;
-import com.example.alexander.animeupdatefreak.AnimeWatchingListFragment;
+import com.example.alexander.animeupdatefreak.Fragments.AnimeFinishedListFragment;
+import com.example.alexander.animeupdatefreak.Fragments.AnimeWatchLaterListFragment;
+import com.example.alexander.animeupdatefreak.Fragments.AnimeWatchingListFragment;
 
 public class AnimePagerAdapter extends FragmentPagerAdapter {
 
@@ -55,14 +54,5 @@ public class AnimePagerAdapter extends FragmentPagerAdapter {
                 return "Finished";
         }
         return null;
-    }
-
-    public void updateFragments() {
-        if(watching != null && watchLater != null && finished != null) {
-            watching.updateAdapter();
-            watchLater.updateAdapter();
-            finished.updateAdapter();
-        }
-
     }
 }

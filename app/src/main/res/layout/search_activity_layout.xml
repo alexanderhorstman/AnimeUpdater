@@ -7,7 +7,7 @@
     <ImageView
         android:layout_width="35dp"
         android:layout_height="35dp"
-        android:src="@drawable/search_icon"
+        android:src="@mipmap/ic_action_search"
         android:id="@+id/search_image"
         android:layout_alignParentRight="true"
         android:onClick="searchForAnime"/>
@@ -20,7 +20,11 @@
         android:layout_toLeftOf="@id/search_image"
         android:inputType="textCapWords"
         android:singleLine="true"
-        android:paddingLeft="5dp"/>
+        android:paddingLeft="5dp"
+        android:textColor="#ffffffff"
+        android:textColorHint="#ffffffff"
+        android:background="#ff555555"
+        android:imeOptions="actionSearch" />
 
     <ListView
         android:layout_width="match_parent"
